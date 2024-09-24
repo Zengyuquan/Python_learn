@@ -1,16 +1,6 @@
-class Phone:
-    __is_5G_enable = False
+s = input("请输入字符")
 
-    def __check_5G(self):
-
-        if self.__is_5G_enable:
-           print("5G启动")
-        else:
-            print("5G关闭，使用4G")
-
-    def call_by_5G(self):
-        self.__check_5G()
-        print("正在通话中")
-
-phone = Phone()
-phone.call_by_5G()
+if len(s) > 20 :
+    print(s)
+else:
+    print("{0:->20}".format(s))
